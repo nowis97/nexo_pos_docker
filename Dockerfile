@@ -10,8 +10,6 @@ RUN apk add supervisor
 # INSTALL COMPOSER
 RUN curl -sS https://getcomposer.org/installer | php81 -- --install-dir=/usr/bin --filename=composer
 
-# CREATE A SYMLINK
-RUN ln -s /usr/bin/php81 /usr/bin/php
 
 # CLONE NEXOPOS REPOSITORY
 RUN git clone https://github.com/Blair2004/NexoPOS
