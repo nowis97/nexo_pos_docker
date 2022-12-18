@@ -1,0 +1,5 @@
+services:
+  nexo-pos:
+    build: .
+    ports:
+      - "4200:80"
